@@ -1,0 +1,158 @@
+@import url("./inter.css");
+@import url("./loto.css");
+
+body {
+  position: relative;
+  cursor: crosshair !important;
+}
+
+body.____REEEEADER_body_active {
+  cursor: crosshair !important;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.____REEEEADER_button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.____REEEEADER_button:hover {
+  background-color: rgba(233, 233, 233, 0.5);
+}
+
+.____REEEEADER_container {
+  pointer-events: none;
+}
+
+.____REEEEADER_boundary {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 129, 120);
+  border-radius: 2px;
+}
+
+.____REEEEADER_modal {
+  display: flex;
+  display: none;
+  z-index: 999999;
+  background-color: #fcfcfc;
+  pointer-events: auto;
+  position: fixed;
+  justify-content: center;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.____REEEEADER_modal * {
+  box-sizing: border-box !important;
+}
+
+.____REEEEADER_modal p,
+.____REEEEADER_modal font {
+  color: #222d39;
+  line-height: 2rem;
+}
+
+.____REEEEADER_modal-main {
+  position: relative;
+}
+
+.____REEEEADER_modal-dialog {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  cursor: default;
+}
+
+.____REEEEADER_content-container {
+  display: flex;
+  position: relative;
+  min-height: min-content;
+  height: min-content;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  max-width: 680px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 100%;
+}
+
+.____REEEEADER_content-container * {
+  max-width: 680px !important;
+  width: 100% !important;
+}
+
+.____REEEEADER_modal-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.____REEEEADER_font-container {
+  position: relative;
+  margin-top: 16px;
+  margin-left: 16px;
+  z-index: 1;
+}
+
+.____REEEEADER_font-option-container {
+  display: none;
+  position: absolute;
+  transform: translate(40%, 30%);
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  padding: 8px 0px;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.____REEEEADER_font-option {
+  min-width: 120px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  padding: 8px 12px;
+}
+
+.____REEEEADER_font-option:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.____REEEEADER_font-option:hover {
+  background-color: bisque;
+}
+
+.____REEEEADER_font-button {
+  border-radius: 100%;
+}
+
+.____REEEEADER_flex {
+  display: flex !important;
+}
+
+.show {
+  display: block;
+}
